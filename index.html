@@ -13,6 +13,18 @@
     <header x-data="{ open:false }" x-ref="head">
         <div class="container flex between">
             <a class="logo" href="index.html">Sewing Factory</a>
+            <nav :class="{'active':open}">
+                <ul class="nav flex">
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="about.html">私たちについて</a></li>
+                    <li><a href="factory.html">工場紹介</a></li>
+                    <li><a href="gallery.html">製品ギャラリー</a></li>
+                    <li><a href="services.html">事業内容</a></li>
+                    <li><a href="testimonials.html">お客様の声</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html" class="cta">お問い合わせ</a></li>
+                </ul>
+            </nav>
             <button class="hamburger" aria-label="メニュー" @click="open = !open" :class="{'active':open}">
                 <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2"
                     stroke="currentColor" fill="none" class="icon" x-cloak>
@@ -24,18 +36,6 @@
                 </svg>
             </button>
         </div>
-        <nav :class="{'active':open}">
-            <ul class="nav flex">
-                <li><a href="index.html">ホーム</a></li>
-                <li><a href="about.html">私たちについて</a></li>
-                <li><a href="factory.html">工場紹介</a></li>
-                <li><a href="gallery.html">製品ギャラリー</a></li>
-                <li><a href="services.html">事業内容</a></li>
-                <li><a href="testimonials.html">お客様の声</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contact.html" class="cta">お問い合わせ</a></li>
-            </ul>
-        </nav>
         <div class="nav-overlay" x-show="open" x-transition.opacity @click="open=false"></div>
     </header>
 
