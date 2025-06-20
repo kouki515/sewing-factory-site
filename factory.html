@@ -4,67 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Factory</title>
+    <title>工場紹介 | 縫製工場</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
 <body>
-    <header x-data="{ open:false }" x-ref="head">
-        <div class="container flex between">
-            <a class="logo" href="index.html">Sewing Factory</a>
-            <button class="hamburger" aria-label="メニュー" @click="open=!open" :class="{'active':open}">
-                <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2"
-                    stroke="currentColor" fill="none" class="icon" x-cloak>
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 6h18M3 12h18M3 18h18" />
-                </svg>
-                <svg x-show="open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2"
-                    stroke="currentColor" fill="none" class="icon">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-            </button>
-        </div>
-        <nav :class="{'active':open}">
-            <ul class="nav flex">
-                <li><a href="index.html">ホーム</a></li>
-                <li><a href="about.html">私たちについて</a></li>
-                <li><a href="factory.html">工場紹介</a></li>
-                <li><a href="gallery.html">製品ギャラリー</a></li>
-                <li><a href="services.html">事業内容</a></li>
-                <li><a href="testimonials.html">お客様の声</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contact.html" class="cta">お問い合わせ</a></li>
-            </ul>
-        </nav>
-        <div class="nav-overlay" x-show="open" x-transition.opacity @click="open=false"></div>
+    <header>
+        <div class="logo">縫製工場</div>
+        <button class="hamburger" aria-label="メニューを開く/閉じる"><span></span><span></span><span></span></button>
     </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="about.html">私たちについて</a></li>
+            <li><a href="factory.html">工場紹介</a></li>
+            <li><a href="gallery.html">製品ギャラリー</a></li>
+            <li><a href="services.html">事業内容・対応業務</a></li>
+            <li><a href="testimonials.html">お客様の声／実績紹介</a></li>
+            <li><a href="faq.html">よくあるご質問</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+    </nav>
 
     <main>
-        <section class="container">
+        <section>
             <h1>工場紹介</h1>
-            <h2>工場写真</h2>
-            <div class="grid two">
-                <img src="https://via.placeholder.com/400x300" alt="">
-                <img src="https://via.placeholder.com/400x300" alt="">
-            </div>
-            <h2>設備紹介</h2>
-            <ul>
-                <li>本縫いミシン 30台</li>
-                <li>C A D システム</li>
-                <li>検針機</li>
-            </ul>
-            <h2>安全・品質管理体制</h2>
-            <p>ISO9001 に準拠した管理プロセスを採用しています。</p>
+            <p>当社の工場は最新鋭の設備と熟練スタッフで高品質な製品を生み出します。</p>
         </section>
 
-    </main>
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Sewing Factory Inc. All Rights Reserved.</p>
-            <ul class="nav flex">
-                <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
-                <li><a href="#">プライバシーポリシー</a></li>
+        <section>
+            <h2>工場の写真</h2>
+            <div class="gallery-grid">
+                <img src="https://images.unsplash.com/photo-1519377345644-937ef9754740?auto=format&fit=crop&w=400&q=60"
+                    alt="外観">
+                <img src="https://images.unsplash.com/photo-1545257861-070232f4ad54?auto=format&fit=crop&w=400&q=60"
+                    alt="内観">
+                <img src="https://images.unsplash.com/photo-1581092334369-6f76a0c08de0?auto=format&fit=crop&w=400&q=60"
+                    alt="作業風景">
+            </div>
+        </section>
+
+        <section>
+            <h2>設備紹介</h2>
+            <ul>
+                <li>工業用本縫いミシン　30台</li>
+                <li>CADシステム　1式</li>
+                <li>自動延反機　2台</li>
+                <li>検針器・検品スペース完備</li>
             </ul>
+        </section>
+
+        <section>
+            <h2>安全・品質管理体制</h2>
+            <p>ISO9001に準拠した品質管理システムで、各工程ごとに検査を実施しています。</p>
+        </section>
+    </main>
+
+    <a href="contact.html" class="cta-btn">お問い合わせ</a>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+        <div class="company">
+            <p>&copy; 2025 縫製工場株式会社</p>
         </div>
     </footer>
 

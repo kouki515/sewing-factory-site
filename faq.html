@@ -4,63 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faq</title>
+    <title>よくあるご質問 | 縫製工場</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
 <body>
-    <header x-data="{ open:false }" x-ref="head">
-        <div class="container flex between">
-            <a class="logo" href="index.html">Sewing Factory</a>
-            <button class="hamburger" aria-label="メニュー" @click="open=!open" :class="{'active':open}">
-                <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2"
-                    stroke="currentColor" fill="none" class="icon" x-cloak>
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 6h18M3 12h18M3 18h18" />
-                </svg>
-                <svg x-show="open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2"
-                    stroke="currentColor" fill="none" class="icon">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-            </button>
-        </div>
-        <nav :class="{'active':open}">
-            <ul class="nav flex">
-                <li><a href="index.html">ホーム</a></li>
-                <li><a href="about.html">私たちについて</a></li>
-                <li><a href="factory.html">工場紹介</a></li>
-                <li><a href="gallery.html">製品ギャラリー</a></li>
-                <li><a href="services.html">事業内容</a></li>
-                <li><a href="testimonials.html">お客様の声</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contact.html" class="cta">お問い合わせ</a></li>
-            </ul>
-        </nav>
-        <div class="nav-overlay" x-show="open" x-transition.opacity @click="open=false"></div>
+    <header>
+        <div class="logo">縫製工場</div>
+        <button class="hamburger" aria-label="メニューを開く/閉じる"><span></span><span></span><span></span></button>
     </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="about.html">私たちについて</a></li>
+            <li><a href="factory.html">工場紹介</a></li>
+            <li><a href="gallery.html">製品ギャラリー</a></li>
+            <li><a href="services.html">事業内容・対応業務</a></li>
+            <li><a href="testimonials.html">お客様の声／実績紹介</a></li>
+            <li><a href="faq.html">よくあるご質問</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+    </nav>
 
     <main>
-        <section class="container">
-            <h1>よくあるご質問</h1>
-            <h2>見積もりについて</h2>
-            <p>生産数・仕様をお知らせください。1〜2営業日でお返事します。</p>
-            <h2>納期や対応エリア</h2>
-            <p>国内配送は全国対応。納期は仕様確定後30日〜。</p>
-            <h2>サンプルの取り扱い</h2>
-            <p>試作品は有償となります。</p>
+        <section>
+            <h1>よくあるご質問（FAQ）</h1>
         </section>
 
+        <section>
+            <h2>見積もりについて</h2>
+            <p>Q: 見積りにはどのような情報が必要ですか？<br>
+                A: 仕様書やデザイン、数量、希望納期などをご提示ください。</p>
+        </section>
+
+        <section>
+            <h2>納期や対応エリア</h2>
+            <p>Q: 納期はどれくらいですか？<br>
+                A: 通常30〜45日ですが、数量や仕様により前後します。</p>
+        </section>
+
+        <section>
+            <h2>サンプルの取り扱い</h2>
+            <p>Q: サンプルは返却されますか？<br>
+                A: 基本的に返却いたしますが、場合によりご相談となります。</p>
+        </section>
     </main>
+    <a href="contact.html" class="cta-btn">お問い合わせ</a>
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Sewing Factory Inc. All Rights Reserved.</p>
-            <ul class="nav flex">
-                <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
-                <li><a href="#">プライバシーポリシー</a></li>
+        <nav>
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
             </ul>
+        </nav>
+        <div class="company">
+            <p>&copy; 2025 縫製工場株式会社</p>
         </div>
     </footer>
-
     <script src="script.js"></script>
 </body>
 

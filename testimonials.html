@@ -4,59 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testimonials</title>
+    <title>お客様の声・実績紹介 | 縫製工場</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
 <body>
-    <header x-data="{ open:false }" x-ref="head">
-        <div class="container flex between">
-            <a class="logo" href="index.html">Sewing Factory</a>
-            <button class="hamburger" aria-label="メニュー" @click="open=!open" :class="{'active':open}">
-                <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2"
-                    stroke="currentColor" fill="none" class="icon" x-cloak>
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 6h18M3 12h18M3 18h18" />
-                </svg>
-                <svg x-show="open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2"
-                    stroke="currentColor" fill="none" class="icon">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-            </button>
-        </div>
-        <nav :class="{'active':open}">
-            <ul class="nav flex">
-                <li><a href="index.html">ホーム</a></li>
-                <li><a href="about.html">私たちについて</a></li>
-                <li><a href="factory.html">工場紹介</a></li>
-                <li><a href="gallery.html">製品ギャラリー</a></li>
-                <li><a href="services.html">事業内容</a></li>
-                <li><a href="testimonials.html">お客様の声</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contact.html" class="cta">お問い合わせ</a></li>
-            </ul>
-        </nav>
-        <div class="nav-overlay" x-show="open" x-transition.opacity @click="open=false"></div>
+    <header>
+        <div class="logo">縫製工場</div>
+        <button class="hamburger" aria-label="メニューを開く/閉じる"><span></span><span></span><span></span></button>
     </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="about.html">私たちについて</a></li>
+            <li><a href="factory.html">工場紹介</a></li>
+            <li><a href="gallery.html">製品ギャラリー</a></li>
+            <li><a href="services.html">事業内容・対応業務</a></li>
+            <li><a href="testimonials.html">お客様の声／実績紹介</a></li>
+            <li><a href="faq.html">よくあるご質問</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+    </nav>
 
     <main>
-        <section class="container">
+        <section>
             <h1>お客様の声・実績紹介</h1>
-            <blockquote>「短納期なのに完成度が高く、大変満足しています！」<cite>— 株式会社A</cite></blockquote>
-            <blockquote>「小ロットでも柔軟に対応してくれて助かりました。」<cite>— デザイナーB</cite></blockquote>
+            <p>当社をご利用いただいたお客様からのコメントと制作事例をご紹介します。</p>
         </section>
 
+        <section>
+            <h2>お客様の声</h2>
+            <div class="features">
+                <div class="feature">
+                    <h3>アパレルブランドA 様</h3>
+                    <p>「急なスケジュールでも柔軟に対応していただき、品質も大満足です！」</p>
+                </div>
+                <div class="feature">
+                    <h3>スタートアップB 様</h3>
+                    <p>「小ロットでも丁寧に相談に乗ってくれて助かりました。」</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>制作実績</h2>
+            <div class="gallery-grid">
+                <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=60"
+                    alt="実績1">
+                <img src="https://images.unsplash.com/photo-1523805009345-7448845a9e53?auto=format&fit=crop&w=400&q=60"
+                    alt="実績2">
+                <img src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=400&q=60"
+                    alt="実績3">
+            </div>
+        </section>
     </main>
+    <a href="contact.html" class="cta-btn">お問い合わせ</a>
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Sewing Factory Inc. All Rights Reserved.</p>
-            <ul class="nav flex">
-                <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
-                <li><a href="#">プライバシーポリシー</a></li>
+        <nav>
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
             </ul>
+        </nav>
+        <div class="company">
+            <p>&copy; 2025 縫製工場株式会社</p>
         </div>
     </footer>
-
     <script src="script.js"></script>
 </body>
 

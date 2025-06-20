@@ -4,80 +4,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>縫製工場 | ホーム</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
 <body>
-    <header x-data="{ open:false }" x-ref="head">
-        <div class="container flex between">
-            <a class="logo" href="index.html">Sewing Factory</a>
-            <nav :class="{'active':open}">
-                <ul class="nav flex">
-                    <li><a href="index.html">ホーム</a></li>
-                    <li><a href="about.html">私たちについて</a></li>
-                    <li><a href="factory.html">工場紹介</a></li>
-                    <li><a href="gallery.html">製品ギャラリー</a></li>
-                    <li><a href="services.html">事業内容</a></li>
-                    <li><a href="testimonials.html">お客様の声</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="contact.html" class="cta">お問い合わせ</a></li>
-                </ul>
-            </nav>
-            <button class="hamburger" aria-label="メニュー" @click="open = !open" :class="{'active':open}">
-                <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2"
-                    stroke="currentColor" fill="none" class="icon" x-cloak>
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 6h18M3 12h18M3 18h18" />
-                </svg>
-                <svg x-show="open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2"
-                    stroke="currentColor" fill="none" class="icon">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-            </button>
-        </div>
-        <div class="nav-overlay" x-show="open" x-transition.opacity @click="open=false"></div>
+    <!-- ヘッダー -->
+    <header>
+        <div class="logo">縫製工場</div>
+        <button class="hamburger" aria-label="メニューを開く/閉じる"><span></span><span></span><span></span></button>
     </header>
+    <!-- ナビゲーション -->
+    <nav>
+        <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="about.html">私たちについて</a></li>
+            <li><a href="factory.html">工場紹介</a></li>
+            <li><a href="gallery.html">製品ギャラリー</a></li>
+            <li><a href="services.html">事業内容・対応業務</a></li>
+            <li><a href="testimonials.html">お客様の声／実績紹介</a></li>
+            <li><a href="faq.html">よくあるご質問</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+    </nav>
 
     <main>
+        <!-- キービジュアル -->
         <section class="hero">
-            <div class="overlay">
-                <h1>高品質な製品を提供する縫製工場</h1>
-            </div>
-        </section>
-        <section class="container">
-            <h2>私たちの強み</h2>
-            <div class="grid two">
-                <div>
-                    <h3>国内一貫生産</h3>
-                    <p>全工程を国内で完結。短納期と高品質を実現します。</p>
-                </div>
-                <div>
-                    <h3>小ロット対応</h3>
-                    <p>スタートアップ・個人ブランドの少量生産も歓迎。</p>
-                </div>
-                <div>
-                    <h3>徹底した品質管理</h3>
-                    <p>専門スタッフが全品検品し、不良率を最小化。</p>
-                </div>
-            </div>
-        </section>
-        <section class="container">
-            <h2>最新情報</h2>
-            <p>近日公開予定の新製品をお楽しみに！</p>
+            <img src="https://images.unsplash.com/photo-1563298723-dcfebaa392e3?auto=format&fit=crop&w=1200&q=80"
+                alt="縫製工場の作業風景">
+            <h1>高品質な縫製で<br>あなたのブランドをサポート</h1>
         </section>
 
-    </main>
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Sewing Factory Inc. All Rights Reserved.</p>
-            <ul class="nav flex">
-                <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
-                <li><a href="#">プライバシーポリシー</a></li>
+        <!-- 強み -->
+        <section>
+            <h2>私たちの強み</h2>
+            <div class="features">
+                <div class="feature">
+                    <h3>高品質な縫製</h3>
+                    <p>熟練の職人が一つひとつ丁寧に仕上げます。</p>
+                </div>
+                <div class="feature">
+                    <h3>小ロット対応</h3>
+                    <p>少量生産でもお気軽にご相談ください。</p>
+                </div>
+                <div class="feature">
+                    <h3>国内一貫生産</h3>
+                    <p>国内での一貫生産体制により短納期を実現。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 最新情報 -->
+        <section>
+            <h2>最新情報</h2>
+            <ul>
+                <li>2025/06/15 新設備導入のお知らせ</li>
+                <li>2025/05/28 サステナブル素材への取り組み</li>
+                <li>2025/04/10 公式Instagramを開設しました</li>
             </ul>
+        </section>
+    </main>
+
+    <!-- CTA ボタン -->
+    <a href="contact.html" class="cta-btn">お問い合わせ</a>
+
+    <!-- フッター -->
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="about.html">私たちについて</a></li>
+                <li><a href="factory.html">工場紹介</a></li>
+                <li><a href="services.html">事業内容</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+        <div class="company">
+            <p>縫製工場株式会社</p>
+            <p>法人番号: 0123-45-678910</p>
+            <p>&copy; 2025 縫製工場株式会社</p>
+            <p><a href="#">プライバシーポリシー</a></p>
         </div>
     </footer>
-
     <script src="script.js"></script>
 </body>
 
