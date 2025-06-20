@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
+
 <body>
-<header>
-    <div class="container flex between">
-        <a class="logo" href="index.html">Sewing Factory</a>
-        <nav>
+    <header x-data="{ open:false }" x-ref="head">
+        <div class="container flex between">
+            <a class="logo" href="index.html">Sewing Factory</a>
+            <button class="hamburger" aria-label="メニュー" @click="open=!open" :class="{'active':open}">
+                <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor" fill="none" class="icon" x-cloak>
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 6h18M3 12h18M3 18h18" />
+                </svg>
+                <svg x-show="open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor" fill="none" class="icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+        <nav :class="{'active':open}">
             <ul class="nav flex">
                 <li><a href="index.html">ホーム</a></li>
                 <li><a href="about.html">私たちについて</a></li>
@@ -22,11 +36,12 @@
                 <li><a href="contact.html" class="cta">お問い合わせ</a></li>
             </ul>
         </nav>
-    </div>
-</header>
+        <div class="nav-overlay" x-show="open" x-transition.opacity @click="open=false"></div>
+    </header>
 
-<main>
-        <section class="container"><h1>お問い合わせ</h1>
+    <main>
+        <section class="container">
+            <h1>お問い合わせ</h1>
             <form action="#" method="post">
                 <label for="name">お名前</label><input id="name" name="name" type="text" required>
                 <label for="email">メールアドレス</label><input id="email" name="email" type="email" required>
@@ -34,17 +49,19 @@
                 <button type="submit">送信</button>
             </form>
         </section>
-    
-</main>
-<footer>
-    <div class="container">
-        <p>&copy; 2025 Sewing Factory Inc. All Rights Reserved.</p>
-        <ul class="nav flex">
-            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
-            <li><a href="#">プライバシーポリシー</a></li>
-        </ul>
-    </div>
-</footer>
 
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Sewing Factory Inc. All Rights Reserved.</p>
+            <ul class="nav flex">
+                <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                <li><a href="#">プライバシーポリシー</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>

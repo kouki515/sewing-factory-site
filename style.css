@@ -1,29 +1,320 @@
-*{box-sizing:border-box;margin:0;padding:0;font-family:'Noto Sans JP',sans-serif;}
-body{line-height:1.6;color:#333;background:#fff;}
-a{color:#153B6B;text-decoration:none;}
-header{background:#fff;border-bottom:1px solid #E5E7EB;position:sticky;top:0;z-index:100;}
-.container{max-width:1200px;margin:0 auto;padding:0 20px;}
-.flex{display:flex;align-items:center;}
-.between{justify-content:space-between;}
-.nav li{list-style:none;margin-left:20px;}
-.nav li:first-child{margin-left:0;}
-.nav a:hover{text-decoration:underline;}
-.logo{font-weight:bold;font-size:1.25rem;color:#153B6B;}
-.cta{padding:8px 14px;border:2px solid #153B6B;border-radius:4px;}
-.cta:hover{background:#153B6B;color:#fff;}
-main{padding:80px 0 60px;}
-h1{font-size:2rem;margin-bottom:1rem;color:#153B6B;}
-h2{font-size:1.5rem;margin:2rem 0 1rem;}
-p{margin-bottom:1rem;}
-.hero{background:url('https://images.unsplash.com/photo-1535303311164-664fc9ec6532?auto=format&fit=crop&w=1350&q=80') center/cover;height:400px;color:#fff;display:flex;align-items:center;}
-.hero .overlay{background:rgba(0,0,0,.45);width:100%;height:100%;display:flex;align-items:center;}
-.hero h1{color:#fff;margin:0 0 0 40px;}
-.grid{display:grid;gap:20px;}
-.two{grid-template-columns:repeat(auto-fit,minmax(280px,1fr));}
-footer{background:#153B6B;color:#fff;padding:20px 0;margin-top:60px;}
-footer .nav a{color:#fff;}
-form{max-width:600px;margin:0 auto;}
-label{display:block;margin-bottom:.5rem;font-weight:600;}
-input,textarea{width:100%;padding:.75rem;border:1px solid #ccc;border-radius:4px;margin-bottom:1rem;}
-button{background:#153B6B;color:#fff;border:none;padding:.75rem 1.5rem;border-radius:4px;cursor:pointer;}
-button:hover{opacity:.9;}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans JP", sans-serif;
+}
+body {
+  line-height: 1.6;
+  color: #333;
+  background: #fff;
+}
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: var(--transition);
+}
+header {
+  background: rgba(255, 255, 255, 0.8); /* ガラス風 */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  border-bottom: none;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: var(--transition);
+}
+header.scrolled {
+  background: var(--color-bg);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.between {
+  justify-content: space-between;
+}
+.nav li {
+  list-style: none;
+  margin-left: 32px;
+}
+.nav li:first-child {
+  margin-left: 0;
+}
+.nav a {
+  position: relative;
+  display: inline-block;
+  padding: 4px 0;
+}
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: var(--color-primary);
+  transition: var(--transition);
+}
+.nav a:hover::after {
+  width: 100%;
+}
+.logo {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #153b6b;
+}
+.cta {
+  padding: 8px 14px;
+  border: 2px solid #153b6b;
+  border-radius: 4px;
+  background: var(--color-primary);
+  color: #fff;
+  transition: var(--transition);
+}
+.cta:hover {
+  background: #153b6b;
+  color: #fff;
+  opacity: 0.9;
+}
+main {
+  padding: 80px 0 60px;
+}
+h1 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  margin-bottom: 1rem;
+  color: #153b6b;
+}
+h2 {
+  font-size: clamp(1.375rem, 3vw, 2rem);
+  margin: 2rem 0 1rem;
+}
+p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+.hero {
+  background: url("https://images.unsplash.com/photo-1535303311164-664fc9ec6532?auto=format&fit=crop&w=1350&q=80")
+    center/cover;
+  height: 400px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.hero .overlay {
+  background: rgba(0, 0, 0, 0.45);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.hero h1 {
+  color: #fff;
+  margin: 0 0 0 40px;
+}
+.grid {
+  display: grid;
+  gap: 20px;
+}
+.two {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+footer {
+  background: #153b6b;
+  color: #fff;
+  padding: 20px 0;
+  margin-top: 60px;
+}
+footer .nav a {
+  color: #fff;
+}
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+button {
+  background: #153b6b;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.9;
+}
+
+/* ------------------------- */
+/*  モダンデザイン用の変数定義  */
+/* ------------------------- */
+:root {
+  --color-primary: #153b6b;
+  --color-text: #333;
+  --color-bg: #ffffff;
+  --color-muted: #e5e7eb;
+  --radius: 6px;
+  --transition: all 0.25s ease-in-out;
+}
+
+/* カード風デザイン */
+.card {
+  background: #fff;
+  border: 1px solid var(--color-muted);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+}
+
+/* 画像をレスポンシブにする */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ------------------------- */
+/*  レスポンシブ – ブレークポイント  */
+/* ------------------------- */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  /* ヘッダーのレイアウトを縦並びに */
+  header .flex.between {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 200;
+    width: 70vw;
+    max-width: 260px;
+    height: 100vh;
+    background: var(--color-bg);
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.08);
+    padding: 80px 24px; /* ヘッダー高さ分 + 内側余白 */
+    transform: translateX(100%);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav.active {
+    transform: translateX(0);
+  }
+  .nav {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+  .nav li {
+    margin: 0;
+  }
+
+  /* ヒーローセクション高さ縮小 */
+  .hero {
+    height: 280px;
+    text-align: center;
+  }
+  .hero h1 {
+    margin-left: 0;
+    font-size: 1.5rem;
+  }
+
+  /* グリッドを1列表示に */
+  .grid.two {
+    grid-template-columns: 1fr;
+  }
+
+  /* オーバーレイ */
+  .nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    transition: opacity 0.25s ease-in-out;
+    z-index: 150;
+  }
+  [x-cloak] {
+    display: none;
+  } /* Alpine用 */
+
+  .hamburger {
+    display: inline-flex;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+}
+
+/* ------------------------- */
+/* ハンバーガー（SVGアイコン版） */
+/* ------------------------- */
+.hamburger {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.hamburger svg {
+  width: 28px;
+  height: 28px;
+  stroke: var(--color-primary);
+}
+.hamburger.active svg {
+  stroke: var(--color-primary);
+} /* 予備 */
+
+/* 旧 span バーは非表示 */
+.hamburger span {
+  display: none;
+}
+
+/* ------------------------- */
+/* スクロール時フェードイン */
+/* ------------------------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.reveal.show {
+  opacity: 1;
+  transform: none;
+}
