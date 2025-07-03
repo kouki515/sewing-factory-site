@@ -9,9 +9,9 @@ const nextConfig: NextConfig = {
   // GitHub Pages では _next や _app などのフォルダが問題になることがあるため
   distDir: 'out',
   // ベースパスの設定（リポジトリ名が必要な場合）
-  // basePath: '/your-repo-name',
+  basePath: '/sewing-factory-site',
   // アセットプレフィックス（必要に応じて）
-  // assetPrefix: '/your-repo-name/',
+  assetPrefix: '/sewing-factory-site',
 };
 
 export default nextConfig;
