@@ -4,40 +4,49 @@ import { Layout } from '@/components/Layout'
 export default function Gallery() {
   const galleryImages = [
     {
-      src: "https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=400&q=80",
-      alt: "ドレス作品"
+      src: "/images/LINE_ALBUM_20250620_250703_10.jpg",
+      alt: "制服（ポロシャツ・スカート）",
+      category: "制服"
     },
     {
-      src: "https://images.unsplash.com/photo-1516762689617-e1cfddf819d1?auto=format&fit=crop&w=400&q=80",
-      alt: "シャツ作品"
+      src: "/images/LINE_ALBUM_20250620_250703_15.jpg",
+      alt: "ビジネススーツ（ジャケット・スカート）",
+      category: "ビジネスウェア"
     },
     {
-      src: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=400&q=80",
-      alt: "ジャケット作品"
+      src: "/images/LINE_ALBUM_20250620_250703_40.jpg",
+      alt: "トレンチコート",
+      category: "アウター"
     },
     {
-      src: "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?auto=format&fit=crop&w=400&q=80",
-      alt: "カジュアルウェア"
+      src: "/images/LINE_ALBUM_20250620_250703_11.jpg",
+      alt: "カジュアルジャケット",
+      category: "カジュアルウェア"
     },
     {
-      src: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=400&q=80",
-      alt: "ビジネスウェア"
+      src: "/images/LINE_ALBUM_20250620_250703_16.jpg",
+      alt: "フォーマルドレス",
+      category: "フォーマルウェア"
     },
     {
-      src: "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=400&q=80",
-      alt: "アクセサリー"
+      src: "/images/LINE_ALBUM_20250620_250703_17.jpg",
+      alt: "ワンピース",
+      category: "レディースウェア"
     },
     {
-      src: "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=400&q=80",
-      alt: "スポーツウェア"
+      src: "/images/LINE_ALBUM_20250620_250703_26.jpg",
+      alt: "ブラウス",
+      category: "レディースウェア"
     },
     {
-      src: "https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?auto=format&fit=crop&w=400&q=80",
-      alt: "コート作品"
+      src: "/images/LINE_ALBUM_20250620_250703_27.jpg",
+      alt: "カジュアルシャツ",
+      category: "カジュアルウェア"
     },
     {
-      src: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=400&q=80",
-      alt: "フォーマルウェア"
+      src: "/images/LINE_ALBUM_20250620_250703_41.jpg",
+      alt: "フォーマルスーツ",
+      category: "ビジネスウェア"
     }
   ]
 
@@ -57,19 +66,24 @@ export default function Gallery() {
               作品一覧
               <div className="absolute bottom-[-8px] left-0 w-10 h-1 bg-blue-700 rounded-full" />
             </h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               {galleryImages.map((image, index) => (
                 <div key={index} className="group relative overflow-hidden rounded-xl bg-white shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300">
-                  <div className="aspect-square relative overflow-hidden">
+                  <div className="aspect-[3/4] relative overflow-hidden">
                     <Image
                       src={image.src}
                       alt={image.alt}
                       fill
-                      className="object-cover group-hover:scale-110 transition-transform duration-300"
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
-                  <div className="p-3 md:p-4">
-                    <p className="text-sm md:text-base font-medium text-gray-700">{image.alt}</p>
+                  <div className="p-4 md:p-6">
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-xs font-medium text-blue-700 bg-blue-50 px-2 py-1 rounded-full">
+                        {image.category}
+                      </span>
+                    </div>
+                    <h3 className="text-sm md:text-base font-medium text-gray-900">{image.alt}</h3>
                   </div>
                 </div>
               ))}

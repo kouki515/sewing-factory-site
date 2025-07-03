@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { Layout } from '@/components/Layout'
 
 export default function About() {
@@ -7,9 +8,23 @@ export default function About() {
         <div className="max-w-6xl mx-auto px-4 py-8 md:py-16">
           <section className="mb-12 md:mb-16">
             <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 md:mb-8">会社概要</h1>
+            
+            {/* Company Building Image */}
+            <div className="mb-8">
+              <div className="relative h-64 md:h-96 overflow-hidden rounded-xl shadow-lg">
+                <Image
+                  src="/images/LINE_ALBUM_20250620_250703_1.jpg"
+                  alt="峰田ソーイング工場外観"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <p className="text-center text-gray-600 mt-4">峰田ソーイング本社工場</p>
+            </div>
+            
             <div className="prose max-w-none">
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                縫製工場株式会社は、創業20年以上の歴史を持つ縫製専門企業です。国内一貫生産体制により、高品質かつ柔軟なものづくりを提供しています。
+                峰田ソーイングは、創業20年以上の歴史を持つ縫製専門企業です。国内一貫生産体制により、高品質かつ柔軟なものづくりを提供しています。
               </p>
               <div className="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-gray-100">
                 <ul className="space-y-3 text-gray-700">

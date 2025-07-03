@@ -6,19 +6,24 @@ export default function Home() {
     <Layout>
       <main>
         {/* Hero Section */}
-        <section className="relative h-[40vh] min-h-[300px] overflow-hidden">
+        <section className="relative h-[50vh] min-h-[400px] overflow-hidden">
           <Image
-            src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80"
-            alt="洋服の陳列"
+            src="/images/LINE_ALBUM_20250620_250703_1.jpg"
+            alt="峰田ソーイング工場外観"
             fill
-            className="object-cover"
+            className="object-cover object-center"
             priority
           />
-          <div className="absolute inset-0 bg-black/20" />
+          <div className="absolute inset-0 bg-black/30" />
           <div className="absolute inset-0 flex items-center justify-center">
-            <h1 className="text-white text-center text-xl md:text-2xl lg:text-3xl font-bold px-4 drop-shadow-lg">
-              高品質な縫製で<br />あなたのブランドをサポート
-            </h1>
+            <div className="text-center px-4">
+              <h1 className="text-white text-2xl md:text-4xl lg:text-5xl font-bold mb-4 drop-shadow-lg">
+                峰田ソーイング
+              </h1>
+              <p className="text-white text-lg md:text-xl lg:text-2xl font-medium drop-shadow-lg">
+                高品質な縫製で<br />あなたのブランドをサポート
+              </p>
+            </div>
           </div>
         </section>
 
