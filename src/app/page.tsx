@@ -8,7 +8,7 @@ export default function Home() {
         {/* Hero Section */}
         <section className="relative h-[50vh] min-h-[400px] overflow-hidden">
           <Image
-            src="/images/LINE_ALBUM_20250620_250703_1.jpg"
+            src="/sewing-factory-site/images/LINE_ALBUM_20250620_250703_1.jpg"
             alt="峰田ソーイング工場外観"
             fill
             className="object-cover object-center"

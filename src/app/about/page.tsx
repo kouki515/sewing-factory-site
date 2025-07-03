@@ -13,7 +13,7 @@ export default function About() {
             <div className="mb-8">
               <div className="relative h-64 md:h-96 overflow-hidden rounded-xl shadow-lg">
                 <Image
-                  src="/images/LINE_ALBUM_20250620_250703_1.jpg"
+                  src="/sewing-factory-site/images/LINE_ALBUM_20250620_250703_1.jpg"
                   alt="峰田ソーイング工場外観"
                   fill
                   className="object-cover"

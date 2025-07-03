@@ -4,47 +4,47 @@ import { Layout } from '@/components/Layout'
 export default function Gallery() {
   const galleryImages = [
     {
-      src: "/images/LINE_ALBUM_20250620_250703_10.jpg",
+      src: "/sewing-factory-site/images/LINE_ALBUM_20250620_250703_10.jpg",
       alt: "制服（ポロシャツ・スカート）",
       category: "制服"
     },
     {
-      src: "/images/LINE_ALBUM_20250620_250703_15.jpg",
+      src: "/sewing-factory-site/images/LINE_ALBUM_20250620_250703_15.jpg",
       alt: "ビジネススーツ（ジャケット・スカート）",
       category: "ビジネスウェア"
     },
     {
-      src: "/images/LINE_ALBUM_20250620_250703_40.jpg",
+      src: "/sewing-factory-site/images/LINE_ALBUM_20250620_250703_40.jpg",
       alt: "トレンチコート",
       category: "アウター"
     },
     {
-      src: "/images/LINE_ALBUM_20250620_250703_11.jpg",
+      src: "/sewing-factory-site/images/LINE_ALBUM_20250620_250703_11.jpg",
       alt: "カジュアルジャケット",
       category: "カジュアルウェア"
     },
     {
-      src: "/images/LINE_ALBUM_20250620_250703_16.jpg",
+      src: "/sewing-factory-site/images/LINE_ALBUM_20250620_250703_16.jpg",
       alt: "フォーマルドレス",
       category: "フォーマルウェア"
     },
     {
-      src: "/images/LINE_ALBUM_20250620_250703_17.jpg",
+      src: "/sewing-factory-site/images/LINE_ALBUM_20250620_250703_17.jpg",
       alt: "ワンピース",
       category: "レディースウェア"
     },
     {
-      src: "/images/LINE_ALBUM_20250620_250703_26.jpg",
+      src: "/sewing-factory-site/images/LINE_ALBUM_20250620_250703_26.jpg",
       alt: "ブラウス",
       category: "レディースウェア"
     },
     {
-      src: "/images/LINE_ALBUM_20250620_250703_27.jpg",
+      src: "/sewing-factory-site/images/LINE_ALBUM_20250620_250703_27.jpg",
       alt: "カジュアルシャツ",
       category: "カジュアルウェア"
     },
     {
-      src: "/images/LINE_ALBUM_20250620_250703_41.jpg",
+      src: "/sewing-factory-site/images/LINE_ALBUM_20250620_250703_41.jpg",
       alt: "フォーマルスーツ",
       category: "ビジネスウェア"
     }

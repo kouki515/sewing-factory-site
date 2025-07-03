@@ -16,7 +16,7 @@ export default function Factory() {
             <div className="grid gap-6 md:gap-8 md:grid-cols-2 mb-12">
               <div className="relative h-64 md:h-80 overflow-hidden rounded-xl shadow-lg">
                 <Image
-                  src="/images/LINE_ALBUM_20250620_250703_20.jpg"
+                  src="/sewing-factory-site/images/LINE_ALBUM_20250620_250703_20.jpg"
                   alt="縫製工場内の作業風景"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-300"
@@ -24,7 +24,7 @@ export default function Factory() {
               </div>
               <div className="relative h-64 md:h-80 overflow-hidden rounded-xl shadow-lg">
                 <Image
-                  src="/images/LINE_ALBUM_20250620_250703_35.jpg"
+                  src="/sewing-factory-site/images/LINE_ALBUM_20250620_250703_35.jpg"
                   alt="工場内での縫製作業"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-300"
@@ -43,7 +43,7 @@ export default function Factory() {
             <div className="mb-8">
               <div className="relative h-64 md:h-96 overflow-hidden rounded-xl shadow-lg">
                 <Image
-                  src="/images/LINE_ALBUM_20250620_250703_5.jpg"
+                  src="/sewing-factory-site/images/LINE_ALBUM_20250620_250703_5.jpg"
                   alt="CADパターン作成システム"
                   fill
                   className="object-cover"
