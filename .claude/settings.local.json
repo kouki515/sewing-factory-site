@@ -4,7 +4,12 @@
       "Bash(npm install:*)",
       "Bash(npx:*)",
       "Bash(npm run build:*)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "WebFetch(domain:kouki515.github.io)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(mkdir:*)"
     ],
     "deny": []
   }
