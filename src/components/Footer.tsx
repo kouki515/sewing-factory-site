@@ -22,11 +22,6 @@ export function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/services" className="text-gray-600 hover:text-blue-700 transition-colors duration-200">
-                事業内容
-              </Link>
-            </li>
-            <li>
               <Link href="/contact" className="text-gray-600 hover:text-blue-700 transition-colors duration-200">
                 お問い合わせ
               </Link>

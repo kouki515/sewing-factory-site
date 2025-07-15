@@ -71,24 +71,6 @@ export function Navigation() {
           </li>
           <li className="border-b border-gray-200 md:border-none">
             <Link 
-              href="/services" 
-              className="block py-3.5 px-4 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:py-2 md:px-3 transition-colors duration-200"
-              onClick={closeMenu}
-            >
-              事業内容・対応業務
-            </Link>
-          </li>
-          <li className="border-b border-gray-200 md:border-none">
-            <Link 
-              href="/testimonials" 
-              className="block py-3.5 px-4 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:py-2 md:px-3 transition-colors duration-200"
-              onClick={closeMenu}
-            >
-              お客様の声／実績紹介
-            </Link>
-          </li>
-          <li className="border-b border-gray-200 md:border-none">
-            <Link 
               href="/faq" 
               className="block py-3.5 px-4 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:py-2 md:px-3 transition-colors duration-200"
               onClick={closeMenu}
