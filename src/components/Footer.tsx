@@ -17,6 +17,11 @@ export function Footer() {
               </Link>
             </li>
             <li>
+              <Link href="/message" className="text-gray-600 hover:text-blue-700 transition-colors duration-200">
+                代表挨拶
+              </Link>
+            </li>
+            <li>
               <Link href="/factory" className="text-gray-600 hover:text-blue-700 transition-colors duration-200">
                 工場紹介
               </Link>
