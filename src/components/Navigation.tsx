@@ -31,7 +31,7 @@ export function Navigation() {
       </header>
 
       {/* Navigation */}
-      <nav className={`fixed top-14 left-0 w-full bg-white/90 backdrop-blur-md shadow-sm z-40 transition-transform duration-300 ease-in-out md:relative md:top-0 md:transform-none md:shadow-none md:bg-transparent md:backdrop-blur-none ${isOpen ? 'translate-y-0' : '-translate-y-full md:translate-y-0'}`}>
+      <nav className={`fixed top-14 left-0 w-full bg-white/90 backdrop-blur-md shadow-sm z-50 transition-transform duration-300 ease-in-out md:relative md:top-0 md:transform-none md:shadow-none md:bg-transparent md:backdrop-blur-none ${isOpen ? 'translate-y-0' : '-translate-y-full md:translate-y-0'}`}>
         <ul className="list-none md:flex md:justify-center md:space-x-8 md:py-4">
           <li className="border-b border-gray-200 md:border-none">
             <Link 
