@@ -91,7 +91,7 @@ export function Navigation() {
       {/* Mobile Menu Overlay */}
       {isOpen && (
         <div 
-          className="fixed inset-0 bg-black bg-opacity-50 z-30 md:hidden"
+          className="fixed inset-0 bg-black bg-opacity-20 z-30 md:hidden"
           onClick={closeMenu}
         />
       )}
