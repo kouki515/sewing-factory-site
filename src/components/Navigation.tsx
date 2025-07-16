@@ -77,24 +77,32 @@ export function Navigation() {
           
           {/* Mobile Hamburger Button */}
           <button 
-            className="hamburger w-6 h-5 relative cursor-pointer md:hidden"
+            className="hamburger w-8 h-8 relative cursor-pointer md:hidden flex flex-col justify-center items-center space-y-1"
             onClick={toggleMenu}
             aria-label="メニューを開く/閉じる"
           >
-            <span className={`absolute h-0.5 w-full bg-gray-800 left-0 transition-all duration-300 ${isOpen ? 'top-2.5 rotate-45' : 'top-0'}`}></span>
-            <span className={`absolute h-0.5 w-full bg-gray-800 left-0 top-2.5 transition-opacity duration-300 ${isOpen ? 'opacity-0' : 'opacity-100'}`}></span>
-            <span className={`absolute h-0.5 w-full bg-gray-800 left-0 transition-all duration-300 ${isOpen ? 'top-2.5 -rotate-45' : 'top-4.5'}`}></span>
+            <span className={`block h-0.5 w-6 bg-gray-800 transition-all duration-300 transform origin-center ${isOpen ? 'rotate-45 translate-y-1.5' : ''}`}></span>
+            <span className={`block h-0.5 w-6 bg-gray-800 transition-all duration-300 transform ${isOpen ? 'opacity-0 scale-0' : ''}`}></span>
+            <span className={`block h-0.5 w-6 bg-gray-800 transition-all duration-300 transform origin-center ${isOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
           </button>
         </div>
       </header>
 
+      {/* Mobile Menu Overlay */}
+      {isOpen && (
+        <div 
+          className="fixed inset-0 bg-black bg-opacity-50 z-30 md:hidden"
+          onClick={closeMenu}
+        />
+      )}
+
       {/* Mobile Navigation */}
-      <nav className={`fixed top-14 left-0 w-full bg-white/90 backdrop-blur-md shadow-sm z-50 transition-transform duration-300 ease-in-out md:hidden ${isOpen ? 'translate-y-0' : '-translate-y-full'}`}>
-        <ul className="list-none">
+      <nav className={`fixed top-14 left-0 w-full bg-white shadow-lg z-40 transition-transform duration-300 ease-in-out md:hidden ${isOpen ? 'translate-y-0' : '-translate-y-full'}`}>
+        <ul className="list-none m-0 p-0">
           <li className="border-b border-gray-200">
             <Link 
               href="/" 
-              className="block py-3.5 px-4 hover:bg-gray-100 transition-colors duration-200"
+              className="block py-4 px-6 hover:bg-gray-100 transition-colors duration-200 text-gray-800"
               onClick={closeMenu}
             >
               ホーム
@@ -103,7 +111,7 @@ export function Navigation() {
           <li className="border-b border-gray-200">
             <Link 
               href="/about" 
-              className="block py-3.5 px-4 hover:bg-gray-100 transition-colors duration-200"
+              className="block py-4 px-6 hover:bg-gray-100 transition-colors duration-200 text-gray-800"
               onClick={closeMenu}
             >
               私たちについて
@@ -112,7 +120,7 @@ export function Navigation() {
           <li className="border-b border-gray-200">
             <Link 
               href="/factory" 
-              className="block py-3.5 px-4 hover:bg-gray-100 transition-colors duration-200"
+              className="block py-4 px-6 hover:bg-gray-100 transition-colors duration-200 text-gray-800"
               onClick={closeMenu}
             >
               工場紹介
@@ -121,7 +129,7 @@ export function Navigation() {
           <li className="border-b border-gray-200">
             <Link 
               href="/gallery" 
-              className="block py-3.5 px-4 hover:bg-gray-100 transition-colors duration-200"
+              className="block py-4 px-6 hover:bg-gray-100 transition-colors duration-200 text-gray-800"
               onClick={closeMenu}
             >
               製品ギャラリー
@@ -130,7 +138,7 @@ export function Navigation() {
           <li className="border-b border-gray-200">
             <Link 
               href="/faq" 
-              className="block py-3.5 px-4 hover:bg-gray-100 transition-colors duration-200"
+              className="block py-4 px-6 hover:bg-gray-100 transition-colors duration-200 text-gray-800"
               onClick={closeMenu}
             >
               よくあるご質問
@@ -139,7 +147,7 @@ export function Navigation() {
           <li className="border-b border-gray-200">
             <Link 
               href="/contact" 
-              className="block py-3.5 px-4 hover:bg-gray-100 transition-colors duration-200"
+              className="block py-4 px-6 hover:bg-gray-100 transition-colors duration-200 text-gray-800"
               onClick={closeMenu}
             >
               お問い合わせ
