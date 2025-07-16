@@ -88,16 +88,16 @@ export function Navigation() {
         </div>
       </header>
 
-      {/* Mobile Menu Overlay */}
+      {/* Mobile Menu Background Overlay (invisible, for closing menu) */}
       {isOpen && (
         <div 
-          className="fixed inset-0 bg-black bg-opacity-20 z-30 md:hidden"
+          className="fixed inset-0 z-30 md:hidden"
           onClick={closeMenu}
         />
       )}
 
       {/* Mobile Navigation */}
-      <nav className={`fixed top-14 left-0 w-full bg-white shadow-lg z-40 transition-transform duration-300 ease-in-out md:hidden ${isOpen ? 'translate-y-0' : '-translate-y-full'}`}>
+      <nav className={`fixed top-14 left-0 w-full bg-white/95 backdrop-blur-sm shadow-lg z-40 transition-transform duration-300 ease-in-out md:hidden ${isOpen ? 'translate-y-0' : '-translate-y-full'}`}>
         <ul className="list-none m-0 p-0">
           <li className="border-b border-gray-200">
             <Link 
