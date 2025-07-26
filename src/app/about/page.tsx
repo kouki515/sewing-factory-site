@@ -62,7 +62,7 @@ export default function About() {
                   <div className="text-center">
                     <div className="w-32 h-32 md:w-40 md:h-40 mx-auto mb-4 overflow-hidden rounded-full">
                       <Image
-                        src="/images/representative_photo.jpg"
+                        src="/sewing-factory-site/images/representative_photo.jpg"
                         alt="代表取締役社長 山田太郎"
                         width={160}
                         height={160}
