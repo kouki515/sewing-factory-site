@@ -49,27 +49,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Latest News Section */}
-        <section className="py-8 md:py-16 px-4 max-w-6xl mx-auto bg-gray-50/50">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 md:mb-12 relative">
-            最新情報
-            <div className="absolute bottom-[-8px] left-0 w-10 h-1 bg-blue-700 rounded-full" />
-          </h2>
-          <div className="space-y-3 md:space-y-4">
-            <div className="flex items-start space-x-3 md:space-x-4 text-gray-700">
-              <span className="text-sm md:text-base font-medium text-blue-700 whitespace-nowrap">2025/06/15</span>
-              <span className="text-sm md:text-base">新設備導入のお知らせ</span>
-            </div>
-            <div className="flex items-start space-x-3 md:space-x-4 text-gray-700">
-              <span className="text-sm md:text-base font-medium text-blue-700 whitespace-nowrap">2025/05/28</span>
-              <span className="text-sm md:text-base">サステナブル素材への取り組み</span>
-            </div>
-            <div className="flex items-start space-x-3 md:space-x-4 text-gray-700">
-              <span className="text-sm md:text-base font-medium text-blue-700 whitespace-nowrap">2025/04/10</span>
-              <span className="text-sm md:text-base">公式Instagramを開設しました</span>
-            </div>
-          </div>
-        </section>
       </main>
     </Layout>
   )

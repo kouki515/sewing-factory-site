@@ -34,7 +34,7 @@ export default function About() {
                   </li>
                   <li className="flex items-start">
                     <span className="font-medium text-blue-900 min-w-[80px] md:min-w-[100px]">所在地：</span>
-                    <span>東京都台東区○○1-2-3</span>
+                    <span>香川県さぬき市志度１９９６番地</span>
                   </li>
                   <li className="flex items-start">
                     <span className="font-medium text-blue-900 min-w-[80px] md:min-w-[100px]">代表取締役：</span>
@@ -49,38 +49,6 @@ export default function About() {
             </div>
           </section>
 
-          <section className="mb-12 md:mb-16">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 md:mb-8 relative">
-              沿革
-              <div className="absolute bottom-[-8px] left-0 w-10 h-1 bg-blue-700 rounded-full" />
-            </h2>
-            <div className="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-gray-100">
-              <div className="relative pl-6 border-l-2 border-blue-700">
-                <div className="space-y-6">
-                  <div className="relative">
-                    <div className="absolute -left-8 top-2 w-3 h-3 bg-blue-700 rounded-full"></div>
-                    <div className="text-blue-700 font-semibold">2005年</div>
-                    <div className="text-gray-700">縫製工場株式会社 設立</div>
-                  </div>
-                  <div className="relative">
-                    <div className="absolute -left-8 top-2 w-3 h-3 bg-blue-700 rounded-full"></div>
-                    <div className="text-blue-700 font-semibold">2010年</div>
-                    <div className="text-gray-700">CADシステム導入</div>
-                  </div>
-                  <div className="relative">
-                    <div className="absolute -left-8 top-2 w-3 h-3 bg-blue-700 rounded-full"></div>
-                    <div className="text-blue-700 font-semibold">2018年</div>
-                    <div className="text-gray-700">新工場稼働開始</div>
-                  </div>
-                  <div className="relative">
-                    <div className="absolute -left-8 top-2 w-3 h-3 bg-blue-700 rounded-full"></div>
-                    <div className="text-blue-700 font-semibold">2024年</div>
-                    <div className="text-gray-700">サステナブル素材対応ライン立ち上げ</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
 
           <section className="mb-12 md:mb-16">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 md:mb-8 relative">
@@ -92,8 +60,14 @@ export default function About() {
               <div className="md:flex">
                 <div className="md:w-1/3 p-8 bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center">
                   <div className="text-center">
-                    <div className="w-32 h-32 md:w-40 md:h-40 mx-auto mb-4 bg-gray-300 rounded-full flex items-center justify-center">
-                      <span className="text-gray-600 text-sm">代表者写真</span>
+                    <div className="w-32 h-32 md:w-40 md:h-40 mx-auto mb-4 overflow-hidden rounded-full">
+                      <Image
+                        src="/images/representative_photo.jpg"
+                        alt="代表取締役社長 山田太郎"
+                        width={160}
+                        height={160}
+                        className="object-cover w-full h-full"
+                      />
                     </div>
                     <h3 className="text-xl font-bold text-blue-900 mb-2">山田 太郎</h3>
                     <p className="text-blue-700 font-medium">代表取締役社長</p>
@@ -165,26 +139,6 @@ export default function About() {
             </div>
           </section>
 
-          <section className="mb-12 md:mb-16">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 md:mb-8 relative">
-              理念・ミッション
-              <div className="absolute bottom-[-8px] left-0 w-10 h-1 bg-blue-700 rounded-full" />
-            </h2>
-            <div className="grid gap-6 md:gap-8 md:grid-cols-2">
-              <div className="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-gray-100">
-                <h3 className="text-xl font-semibold text-blue-900 mb-4">企業理念</h3>
-                <p className="text-gray-700 leading-relaxed">
-                  お客様の想いを形にする「ものづくり」を通じて、社会に貢献し、共に成長し続ける企業を目指します。
-                </p>
-              </div>
-              <div className="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-gray-100">
-                <h3 className="text-xl font-semibold text-blue-900 mb-4">ミッション</h3>
-                <p className="text-gray-700 leading-relaxed">
-                  高品質な縫製技術と柔軟な対応力で、お客様のブランド価値向上に貢献します。
-                </p>
-              </div>
-            </div>
-          </section>
         </div>
       </main>
     </Layout>

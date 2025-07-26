@@ -29,14 +29,9 @@ export function Footer() {
           </ul>
         </nav>
         <div className="text-sm text-gray-600 space-y-1">
-          <p>縫製工場株式会社</p>
-          <p>法人番号: 0123-45-678910</p>
-          <p>&copy; 2025 縫製工場株式会社</p>
-          <p>
-            <a href="#" className="hover:text-blue-700 transition-colors duration-200">
-              プライバシーポリシー
-            </a>
-          </p>
+          <p>株式会社峰田ソーイング</p>
+          <p>法人番号: 9470001020256</p>
+          <p>&copy; 2025 株式会社峰田ソーイング</p>
         </div>
       </div>
     </footer>

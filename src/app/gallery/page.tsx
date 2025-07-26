@@ -24,24 +24,9 @@ export default function Gallery() {
       category: "カジュアルウェア"
     },
     {
-      src: "/sewing-factory-site/images/LINE_ALBUM_20250620_250703_16.jpg",
-      alt: "フォーマルドレス",
-      category: "フォーマルウェア"
-    },
-    {
       src: "/sewing-factory-site/images/LINE_ALBUM_20250620_250703_17.jpg",
       alt: "ワンピース",
       category: "レディースウェア"
-    },
-    {
-      src: "/sewing-factory-site/images/LINE_ALBUM_20250620_250703_26.jpg",
-      alt: "ブラウス",
-      category: "レディースウェア"
-    },
-    {
-      src: "/sewing-factory-site/images/LINE_ALBUM_20250620_250703_27.jpg",
-      alt: "カジュアルシャツ",
-      category: "カジュアルウェア"
     },
     {
       src: "/sewing-factory-site/images/LINE_ALBUM_20250620_250703_41.jpg",
