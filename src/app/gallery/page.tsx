@@ -5,33 +5,27 @@ export default function Gallery() {
   const galleryImages = [
     {
       src: "/images/LINE_ALBUM_20250620_250703_10.jpg",
-      alt: "制服（ポロシャツ・スカート）",
-      category: "制服"
+      alt: "ユニフォーム"
     },
     {
       src: "/images/LINE_ALBUM_20250620_250703_15.jpg",
-      alt: "ビジネススーツ（ジャケット・スカート）",
-      category: "ビジネスウェア"
+      alt: "ユニフォーム"
     },
     {
       src: "/images/LINE_ALBUM_20250620_250703_40.jpg",
-      alt: "トレンチコート",
-      category: "アウター"
+      alt: "アパレル"
     },
     {
       src: "/images/LINE_ALBUM_20250620_250703_11.jpg",
-      alt: "カジュアルジャケット",
-      category: "カジュアルウェア"
+      alt: "ユニフォーム"
     },
     {
       src: "/images/LINE_ALBUM_20250620_250703_17.jpg",
-      alt: "ワンピース",
-      category: "レディースウェア"
+      alt: "アパレル"
     },
     {
       src: "/images/LINE_ALBUM_20250620_250703_41.jpg",
-      alt: "フォーマルスーツ",
-      category: "ビジネスウェア"
+      alt: "ユニフォーム"
     }
   ]
 
@@ -63,11 +57,6 @@ export default function Gallery() {
                     />
                   </div>
                   <div className="p-4 md:p-6">
-                    <div className="flex items-center justify-between mb-2">
-                      <span className="text-xs font-medium text-blue-700 bg-blue-50 px-2 py-1 rounded-full">
-                        {image.category}
-                      </span>
-                    </div>
                     <h3 className="text-sm md:text-base font-medium text-gray-900">{image.alt}</h3>
                   </div>
                 </div>

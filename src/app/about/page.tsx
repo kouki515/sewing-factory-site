@@ -8,7 +8,7 @@ export default function About() {
         <div className="max-w-6xl mx-auto px-4 py-8 md:py-16">
           <section className="mb-12 md:mb-16">
             <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 md:mb-8">会社概要</h1>
-            
+
             {/* Company Building Image */}
             <div className="mb-8">
               <div className="relative h-64 md:h-96 overflow-hidden rounded-xl shadow-lg">
@@ -21,7 +21,7 @@ export default function About() {
               </div>
               <p className="text-center text-gray-600 mt-4">峰田ソーイング本社工場</p>
             </div>
-            
+
             <div className="prose max-w-none">
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 峰田ソーイングは、創業20年以上の歴史を持つ縫製専門企業です。国内一貫生産体制により、高品質かつ柔軟なものづくりを提供しています。
@@ -38,7 +38,7 @@ export default function About() {
                   </li>
                   <li className="flex items-start">
                     <span className="font-medium text-blue-900 min-w-[80px] md:min-w-[100px]">代表取締役：</span>
-                    <span>山田太郎</span>
+                    <span>張 金燕</span>
                   </li>
                   <li className="flex items-start">
                     <span className="font-medium text-blue-900 min-w-[80px] md:min-w-[100px]">従業員数：</span>
@@ -55,7 +55,7 @@ export default function About() {
               代表挨拶
               <div className="absolute bottom-[-8px] left-0 w-10 h-1 bg-blue-700 rounded-full" />
             </h2>
-            
+
             <div className="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden mb-8">
               <div className="md:flex">
                 <div className="md:w-1/3 p-8 bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center">
@@ -73,25 +73,25 @@ export default function About() {
                     <p className="text-blue-700 font-medium">代表取締役社長</p>
                   </div>
                 </div>
-                
+
                 <div className="md:w-2/3 p-8 md:p-12">
                   <div className="prose max-w-none">
                     <p className="text-lg text-gray-700 leading-relaxed mb-6">
                       この度は、峰田ソーイングのウェブサイトにお越しいただき、誠にありがとうございます。
                     </p>
-                    
+
                     <p className="text-gray-700 leading-relaxed mb-6">
                       当社は2005年の創業以来、「お客様の想いを形にする」という理念のもと、高品質な縫製技術の向上と、お客様のニーズに応える柔軟な対応力の強化に取り組んでまいりました。
                     </p>
-                    
+
                     <p className="text-gray-700 leading-relaxed mb-6">
                       近年、ファッション業界を取り巻く環境は大きく変化しており、サステナビリティへの意識やデジタル化の波が押し寄せています。私たちは、このような変化を好機と捉え、従来の技術に加えて新しい技術や素材への対応も積極的に進めております。
                     </p>
-                    
+
                     <p className="text-gray-700 leading-relaxed mb-6">
                       何より大切にしているのは、お客様との信頼関係です。小ロット生産から大量生産まで、一つひとつの製品に込められたお客様の想いを理解し、それを形にすることが私たちの使命だと考えております。
                     </p>
-                    
+
                     <p className="text-gray-700 leading-relaxed">
                       今後も、お客様のパートナーとして、共に成長し続ける企業でありたいと思います。ご不明な点やご相談がございましたら、お気軽にお声がけください。
                     </p>
@@ -112,7 +112,7 @@ export default function About() {
                   20年以上培った技術と経験を活かし、妥協のない品質管理で確かな製品をお届けします。
                 </p>
               </div>
-              
+
               <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center">
                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg className="w-8 h-8 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -124,7 +124,7 @@ export default function About() {
                   お客様のニーズを深く理解し、長期的なパートナーシップを築いてまいります。
                 </p>
               </div>
-              
+
               <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center">
                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg className="w-8 h-8 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
