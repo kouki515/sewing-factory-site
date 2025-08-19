@@ -4,32 +4,32 @@ import { Layout } from '@/components/Layout'
 export default function Gallery() {
   const galleryImages = [
     {
-      src: "/sewing-factory-site/images/LINE_ALBUM_20250620_250703_10.jpg",
+      src: "/images/LINE_ALBUM_20250620_250703_10.jpg",
       alt: "制服（ポロシャツ・スカート）",
       category: "制服"
     },
     {
-      src: "/sewing-factory-site/images/LINE_ALBUM_20250620_250703_15.jpg",
+      src: "/images/LINE_ALBUM_20250620_250703_15.jpg",
       alt: "ビジネススーツ（ジャケット・スカート）",
       category: "ビジネスウェア"
     },
     {
-      src: "/sewing-factory-site/images/LINE_ALBUM_20250620_250703_40.jpg",
+      src: "/images/LINE_ALBUM_20250620_250703_40.jpg",
       alt: "トレンチコート",
       category: "アウター"
     },
     {
-      src: "/sewing-factory-site/images/LINE_ALBUM_20250620_250703_11.jpg",
+      src: "/images/LINE_ALBUM_20250620_250703_11.jpg",
       alt: "カジュアルジャケット",
       category: "カジュアルウェア"
     },
     {
-      src: "/sewing-factory-site/images/LINE_ALBUM_20250620_250703_17.jpg",
+      src: "/images/LINE_ALBUM_20250620_250703_17.jpg",
       alt: "ワンピース",
       category: "レディースウェア"
     },
     {
-      src: "/sewing-factory-site/images/LINE_ALBUM_20250620_250703_41.jpg",
+      src: "/images/LINE_ALBUM_20250620_250703_41.jpg",
       alt: "フォーマルスーツ",
       category: "ビジネスウェア"
     }
