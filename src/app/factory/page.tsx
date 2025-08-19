@@ -49,7 +49,7 @@ export default function Factory() {
                   className="object-cover"
                 />
               </div>
-              <p className="text-center text-gray-600 mt-4">最新のCADシステムによる精密なパターン制作</p>
+              <p className="text-center text-gray-600 mt-4">精密なパターン制作</p>
             </div>
             
             <div className="grid gap-6 md:gap-8 md:grid-cols-2 lg:grid-cols-3">

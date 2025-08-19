@@ -18,6 +18,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              // GitHub PagesでSPAのクライアントサイドルーティングを処理
+              (function() {
+                var redirect = sessionStorage.redirect;
+                delete sessionStorage.redirect;
+                if (redirect && redirect != location.href) {
+                  history.replaceState(null, null, redirect);
+                }
+              })();
+            `,
+          }}
+        />
+      </head>
       <body
         className={`${inter.className} antialiased`}
       >
