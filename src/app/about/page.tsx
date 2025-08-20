@@ -38,7 +38,7 @@ export default function About() {
                   </li>
                   <li className="flex items-start">
                     <span className="font-medium text-blue-900 min-w-[80px] md:min-w-[100px]">代表取締役：</span>
-                    <span>張 金燕</span>
+                    <span>張金燕</span>
                   </li>
                   <li className="flex items-start">
                     <span className="font-medium text-blue-900 min-w-[80px] md:min-w-[100px]">従業員数：</span>
