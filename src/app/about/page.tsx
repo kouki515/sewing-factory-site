@@ -44,6 +44,10 @@ export default function About() {
                     <span className="font-medium text-blue-900 min-w-[80px] md:min-w-[100px]">従業員数：</span>
                     <span>50名</span>
                   </li>
+                  <li className="flex items-start">
+                    <span className="font-medium text-blue-900 min-w-[80px] md:min-w-[100px]">電話番号：</span>
+                    <span>087-899-8909</span>
+                  </li>
                 </ul>
               </div>
             </div>

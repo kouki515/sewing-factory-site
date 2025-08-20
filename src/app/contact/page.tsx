@@ -15,10 +15,10 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    
+
     try {
       const formData = new FormData(e.currentTarget)
-      
+
       // 入力値の取得とサニタイゼーション
       const company = sanitizeInput(formData.get('company') as string)
       const name = sanitizeInput(formData.get('name') as string)
@@ -26,33 +26,33 @@ export default function Contact() {
       const phone = sanitizeInput(formData.get('phone') as string)
       const subject = sanitizeInput(formData.get('subject') as string)
       const message = sanitizeInput(formData.get('message') as string)
-      
+
       // 必須項目の検証
       if (!name) {
         alert('お名前を入力してください。')
         return
       }
-      
+
       if (!email) {
         alert('メールアドレスを入力してください。')
         return
       }
-      
+
       if (!validateEmail(email)) {
         alert('正しいメールアドレスを入力してください。')
         return
       }
-      
+
       if (!subject) {
         alert('お問い合わせ種別を選択してください。')
         return
       }
-      
+
       if (!message) {
         alert('お問い合わせ内容を入力してください。')
         return
       }
-      
+
       // メール件名・本文の作成
       const mailSubject = `【峰田ソーイング】${subject}のお問い合わせ`
       const mailBody = `
@@ -65,11 +65,11 @@ export default function Contact() {
 お問い合わせ内容:
 ${message}
       `.trim()
-      
+
       // mailto リンクの生成と実行
       const mailtoLink = `mailto:kusumikouki0515@gmail.com?subject=${encodeURIComponent(mailSubject)}&body=${encodeURIComponent(mailBody)}`
       window.location.href = mailtoLink
-      
+
     } catch (error) {
       console.error('フォーム送信エラー:', error)
       alert('送信中にエラーが発生しました。もう一度お試しください。')
@@ -195,6 +195,10 @@ ${message}
                   <div>
                     <h3 className="font-semibold text-blue-900 mb-2">住所</h3>
                     <p className="text-gray-700">〒769-2101 香川県さぬき市志度１９９６番地</p>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-blue-900 mb-2">電話番号</h3>
+                    <p className="text-gray-700">087-899-8909</p>
                   </div>
                   <div>
                     <h3 className="font-semibold text-blue-900 mb-2">営業時間</h3>
