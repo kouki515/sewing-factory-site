@@ -2,7 +2,9 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: 'export',
-  trailingSlash: false,
+  trailingSlash: true,
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/sewing-factory-site' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/sewing-factory-site' : '',
   images: {
     unoptimized: true,
   },
