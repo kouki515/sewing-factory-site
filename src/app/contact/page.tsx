@@ -67,7 +67,7 @@ ${message}
       `.trim()
 
       // mailto リンクの生成と実行
-      const mailtoLink = `mailto:kusumikouki0515@gmail.com?subject=${encodeURIComponent(mailSubject)}&body=${encodeURIComponent(mailBody)}`
+      const mailtoLink = `mailto:zhangjinyan@fuyan-nt.com?subject=${encodeURIComponent(mailSubject)}&body=${encodeURIComponent(mailBody)}`
       window.location.href = mailtoLink
 
     } catch (error) {
