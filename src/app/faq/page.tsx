@@ -1,4 +1,10 @@
 import { Layout } from '@/components/Layout'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: "よくあるご質問 | 峰田ソーイング",
+  description: "峰田ソーイングのよくあるご質問をまとめました。最小ロット数、納期、価格、品質管理など、縫製に関する疑問にお答えします。",
+}
 
 export default function FAQ() {
   const faqs = [

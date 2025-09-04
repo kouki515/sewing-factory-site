@@ -1,5 +1,11 @@
 import Image from 'next/image'
 import { Layout } from '@/components/Layout'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: "会社概要 | 峰田ソーイング",
+  description: "峰田ソーイングの会社概要をご紹介。2005年創業、香川県さぬき市に本社を構える縫製専門企業です。代表挨拶、企業理念、品質へのこだわりをご覧ください。",
+}
 
 export default function About() {
   return (

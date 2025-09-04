@@ -1,5 +1,11 @@
 import Image from 'next/image'
 import { Layout } from '@/components/Layout'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: "工場紹介 | 峰田ソーイング",
+  description: "峰田ソーイングの工場設備と技術をご紹介。最新のCADシステム、工業用ミシン、厳格な品質管理体制で高品質な製品をお届けします。",
+}
 
 export default function Factory() {
   return (
@@ -11,7 +17,7 @@ export default function Factory() {
             <p className="text-lg text-gray-700 leading-relaxed mb-8">
               最新の設備と熟練の技術で、高品質な製品をお届けします。
             </p>
-            
+
             {/* Factory Images Grid */}
             <div className="grid gap-6 md:gap-8 md:grid-cols-2 mb-12">
               <div className="relative h-64 md:h-80 overflow-hidden rounded-xl shadow-lg">
@@ -38,7 +44,7 @@ export default function Factory() {
               設備・技術
               <div className="absolute bottom-[-8px] left-0 w-10 h-1 bg-blue-700 rounded-full" />
             </h2>
-            
+
             {/* CAD Equipment Image */}
             <div className="mb-8">
               <div className="relative h-64 md:h-96 overflow-hidden rounded-xl shadow-lg">
@@ -51,7 +57,7 @@ export default function Factory() {
               </div>
               <p className="text-center text-gray-600 mt-4">精密なパターン制作</p>
             </div>
-            
+
             <div className="grid gap-6 md:gap-8 md:grid-cols-2 lg:grid-cols-3">
               <div className="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-gray-100">
                 <h3 className="text-xl font-semibold text-blue-900 mb-4">CADシステム</h3>

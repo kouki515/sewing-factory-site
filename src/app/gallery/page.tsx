@@ -1,5 +1,11 @@
 import Image from 'next/image'
 import { Layout } from '@/components/Layout'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: "製品ギャラリー | 峰田ソーイング",
+  description: "峰田ソーイングの製品ギャラリーをご覧ください。ユニフォーム、アパレル製品の製作実績を豊富な写真でご紹介。高品質な縫製技術をお確かめください。",
+}
 
 export default function Gallery() {
   const galleryImages = [
